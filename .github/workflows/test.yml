@@ -33,9 +33,13 @@ jobs:
           npm install
       - name: '运行 【zqkkzddb】'
         run: |
-          node Task/zqkkzddb.js
+          node zqyd/zq_share.js
+          node zqyd/zq_Rotary.js
+          node zqyd/zq_friendSign.js
+          node zqyd/zq_Adv_video.js
+          node zqyd/zq_double.js
         env:
-          #RLURL: ${{ secrets.RLURL }}
+          zq_cookie: ${{ secrets.zq_cookie }}
           #RLHEADER: ${{ secrets.RLHEADER }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
