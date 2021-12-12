@@ -24,11 +24,11 @@ jobs:
           node-version: 12.x
       - name: '运行 【zqkkzddb】'
         run: |
-          node zqyd/zq_share.js
-          node zqyd/zq_Rotary.js
-          node zqyd/zq_friendSign.js
-          node zqyd/zq_Adv_video.js
-          node zqyd/zq_double.js
+          node zqkd/zq_share.js
+          node zqkd/zq_Rotary.js
+          node zqkd/zq_friendSign.js
+          node zqkd/zq_Adv_video.js
+          node zqkd/zq_double.js
         env:
           zq_cookie: ${{ secrets.zq_cookie }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
